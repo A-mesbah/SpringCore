@@ -6,9 +6,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:property-placeholder location="classpath:com/spring/bicycle/data.properties"/>
+    <context:property-placeholder location="classpath:com/spring/beanlifecycle/data.properties"/>
 
-    <bean id="user" class="com.spring.beancycle.User">
+    <bean id="user" class="com.spring.beanlifecycle.User" init-method="doStart" destroy-method="doEnd">
         <property name="email" value="${user.email}"/>
         <property name="team" value="${user.team}"/>
     </bean>

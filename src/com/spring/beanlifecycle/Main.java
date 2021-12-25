@@ -1,6 +1,6 @@
-package com.spring.beancycle;
+package com.spring.beanlifecycle;
 
-import com.spring.beanscope.UserInterface;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.File;
@@ -11,14 +11,14 @@ public class Main {
         /**
          * make sure that the container File Already exists
          */
-        File file = new File("src/com/spring/beancycle/container.xml");
+        File file = new File("src/com/spring/beanlifecycle/container.xml");
         System.out.println("File Exist : "+file.exists());
 
 
         /**
          create new Object From ClassPathXmlApplicationContext
          */
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/beancycle/container.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/beanlifecycle/container.xml");
         /**
          get a new object from User
          */
