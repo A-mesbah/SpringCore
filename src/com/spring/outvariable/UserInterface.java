@@ -1,4 +1,4 @@
-package com.spring.di.setterinjection;
+package com.spring.outvariable;
 
 public interface UserInterface {
     void start ();

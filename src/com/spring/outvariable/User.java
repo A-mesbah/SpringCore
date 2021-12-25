@@ -1,4 +1,4 @@
-package com.spring.di.setterinjection;
+package com.spring.outvariable;
 
 public class User implements UserInterface {
     private PersonInterface personInterface;

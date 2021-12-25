@@ -1,4 +1,4 @@
-package com.spring.di.setterinjection;
+package com.spring.outvariable;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,13 +10,14 @@ public class Main {
         /**
          * make sure that the container File Already exists
          */
-        File file = new File("src/com/spring/di/setterinjection/container.xml");
+        File file = new File("src/com/spring/outvariable/container.xml");
         System.out.println(file.exists());
+
 
         /**
          create new Object From ClassPathXmlApplicationContext
          */
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/di/setterinjection/container.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/outvariable/container.xml");
         /**
          get a new object from User
          */

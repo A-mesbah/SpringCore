@@ -6,17 +6,16 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.spring.lifecycle"/>
-    <bean id="user" class="com.spring.di.setterinjection.User">
+    <context:property-placeholder location="classpath:com/spring/outvariable/data.properties"/>
+    <bean id="user" class="com.spring.outvariable.User">
         <!--
          ref: refers to the other Object_id
          name :is the new name of the Method setPersonInterface but according tom the container validation
          -->
-        <property name="personInterface" ref="person"></property>
-        <property name="email" value="user@gmail.com"></property>
-        <property name="team" value="IT"></property>
+
+        <property name="email" value="${user.email}"></property>
+        <property name="team" value="${user.team}"></property>
     </bean>
-    <bean id="person" class="com.spring.di.setterinjection.Person"/>
 
 
 </beans>
