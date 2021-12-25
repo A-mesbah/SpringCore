@@ -1,4 +1,5 @@
 package com.spring.ioc;
 
-public class Sport {
+public interface Sport {
+    void start();
 }
