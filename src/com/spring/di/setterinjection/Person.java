@@ -1,6 +1,6 @@
-package com.spring.di.constrocturinjection;
+package com.spring.di.setterinjection;
 
-public class Person implements PersonInterface{
+public class Person implements PersonInterface {
 
     @Override
     public void begain() {

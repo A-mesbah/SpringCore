@@ -1,4 +1,4 @@
-package com.spring.di.constrocturinjection;
+package com.spring.di.setterinjection;
 
 public interface UserInterface {
     void start ();

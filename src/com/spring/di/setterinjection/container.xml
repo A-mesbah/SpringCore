@@ -7,10 +7,14 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="com.spring.lifecycle"/>
-    <bean id="user" class="com.spring.di.constrocturinjection.User">
-        <constructor-arg ref="person"></constructor-arg>
+    <bean id="user" class="com.spring.di.setterinjection.User">
+        <!--
+         ref: refers to the other Object_id
+         name :is the new name of the Method setPersonInterface but according tom the container validation
+         -->
+        <property name="personInterface" ref="person"></property>
     </bean>
-    <bean id="person" class="com.spring.di.constrocturinjection.Person"/>
+    <bean id="person" class="com.spring.di.setterinjection.Person"/>
 
 
 </beans>

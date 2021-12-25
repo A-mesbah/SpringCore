@@ -1,16 +1,20 @@
-package com.spring.di.constrocturinjection;
+package com.spring.di.setterinjection;
 
-public class User implements  UserInterface{
+public class User implements UserInterface {
     private PersonInterface personInterface ;
 
-    public User(PersonInterface personInterface) {
+
+    /**
+     * setter Injection
+     * @param personInterface
+     */
+    public void setPersonInterface(PersonInterface personInterface) {
         this.personInterface = personInterface;
     }
 
     @Override
     public void start() {
         System.out.println("i'm User");
-
     }
     @Override
     public void getPerson(){

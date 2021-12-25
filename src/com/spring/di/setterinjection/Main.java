@@ -1,6 +1,5 @@
-package com.spring.di.constrocturinjection;
+package com.spring.di.setterinjection;
 
-import com.spring.ioc.Sport;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.File;
@@ -11,15 +10,15 @@ public class Main {
         /**
          * make sure that the container File Already exists
          */
-        File file = new File("src/com/spring/di/constrocturinjection/container.xml");
+        File file = new File("src/com/spring/di/setterinjection/container.xml");
         System.out.println(file.exists());
 
         /**
          create new Object From ClassPathXmlApplicationContext
          */
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/di/constrocturinjection/container.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/di/setterinjection/container.xml");
         /**
-         get a new object from class FootBall
+         get a new object from User
          */
         UserInterface user1 = context.getBean("user", UserInterface.class);
 
@@ -28,10 +27,5 @@ public class Main {
 
 
     }
-    //we can pass any class to the Constructor of User Such This Class implements the PersonInterface
-  /*
-      Person person = new Person();
-      User user = new User(person);
-        user.start();
-   */
+
 }
