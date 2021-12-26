@@ -22,10 +22,11 @@ public class Main {
          * @parm master : this is the name of the Bean that you can give to in component annotation
          */
         MasterInterface ms = context.getBean("master", MasterInterface.class);
-
         ms.name();
+        System.out.println("---------------default bean name----------");
 
-
+        MasterInterface ms2 = context.getBean("derivedClass", MasterInterface.class);
+        ms2.name();
         context.close();
 
 
