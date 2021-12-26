@@ -1,3 +1,11 @@
 # SpringCore
 Ioc
-DI
+DI-constrocturinjection
+DI-setterinjection
+outvariable
+beanscope
+beanlifecycle
+annotation
+
+
+
