@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class DerivedClass implements MasterInterface {
     @Override
     public void name() {
-        System.out.println("Hallo from DerivedClass");
+        System.out.println("Hallo From DerivedClass");
     }
 }
