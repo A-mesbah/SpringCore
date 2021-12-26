@@ -6,6 +6,7 @@ outvariable
 beanscope
 beanlifecycle
 annotation
+autowiring-constructor
 
 
 
