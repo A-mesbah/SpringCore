@@ -1,4 +1,4 @@
-package com.spring.autowiring;
+package com.spring.autowiring.constructor;
 
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,12 +11,12 @@ public class Main {
         /**
          * make sure that the container File Already exists
          */
-        File file = new File("src/com/spring/autowiring/container.xml");
+        File file = new File("src/com/spring/autowiring/constructor/container.xml");
         System.out.println("File Exist : " + file.exists());
         /**
          *create new Object From ClassPathXmlApplicationContext
          */
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/autowiring/container.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/spring/autowiring/constructor/container.xml");
         /**
          get a new object from master Class where
          * @parm master : this is the name of the Bean that you can give to in component annotation

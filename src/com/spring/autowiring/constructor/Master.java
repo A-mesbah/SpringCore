@@ -1,4 +1,4 @@
-package com.spring.autowiring;
+package com.spring.autowiring.constructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
