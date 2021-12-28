@@ -11,7 +11,7 @@ qualifier
 annotaion-lifesycle @Scope
 annotaion-lifesycle @PostConstruct
 annotaion-lifesycle @PreDestroy
-configuration
+noxml
 
 
 
