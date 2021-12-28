@@ -13,3 +13,4 @@ annotaion-lifesycle @PostConstruct
 annotaion-lifesycle @PreDestroy
 noxml
 bean -->very important
+outVariable2
