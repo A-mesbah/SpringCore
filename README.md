@@ -7,6 +7,7 @@ beanscope
 beanlifecycle
 annotation
 autowiring-constructor
+qualifier
 
 
 
